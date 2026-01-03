@@ -43,13 +43,14 @@ body {
 body::before {
     content: '';
     position: fixed;
-    top: -20%;
-    left: -10%;
-    width: 50%;
-    height: 50%;
-    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(11,17,32,0) 70%);
+    top: -25%; /* Pulled further back */
+    left: -15%;
+    width: 60%; /* Slightly larger for smoother fade */
+    height: 60%;
+    background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(11,17,32,0) 70%);
     z-index: -1;
     pointer-events: none;
+    filter: blur(100px); /* Heavy blur to blend */
 }
 
 body::after {
@@ -294,45 +295,77 @@ a {
 /* 3. Education Cards (Hero specific) */
 .hero-education {
     display: flex;
-    gap: 15px; /* Reduced gap */
+    gap: 16px;
     width: 100%;
     justify-content: center;
-    margin-bottom: 20px; /* Reduced margin */
+    margin-bottom: 24px;
     flex-wrap: wrap;
 }
 
 .hero-edu-card {
     flex: 1;
-    min-width: 220px; /* Smaller min-width */
-    max-width: 300px;
-    padding: 15px; /* Reduced padding */
+    min-width: 300px;
+    max-width: 400px;
+    padding: 6px 16px; /* Ultra-thin padding */
     text-align: left;
-    background: rgba(17, 24, 39, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 24, 39, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px; /* Slightly tighter gap */
+    justify-content: flex-start;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-edu-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo-container {
+    width: 38px; /* Smaller container for thinner card */
+    height: 38px;
+    border-radius: 10px; /* Adjusted radius */
+    background: #fff;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 0;
+}
+
+.edu-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(2.2); /* Keep expanded zoom for Galway */
+}
+
+.edu-logo.no-zoom {
+    transform: scale(1.0); /* Reset zoom for JSPM */
 }
 
 .hero-edu-card .edu-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem; /* Slightly smaller label */
     text-transform: uppercase;
-    color: var(--text-secondary);
-    letter-spacing: 1.5px;
-    margin-bottom: 5px;
-    font-weight: 600;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-weight: 700;
+    display: block;
+    opacity: 0.8;
 }
 
 .hero-edu-card h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjusted title size */
     color: #fff;
-    margin-bottom: 2px;
-}
-
-.hero-edu-card p {
-    margin: 0;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
+    margin-bottom: 0;
+    line-height: 1.1;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 /* 4. Skills Pills (Hero specific) */
@@ -345,12 +378,13 @@ a {
 }
 
 .hero-skill {
-    padding: 5px 14px; /* Smaller pills */
+    display: inline-block;
+    padding: 8px 22px; /* Increased padding */
     border-radius: 50px;
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 1rem; /* Increased font size */
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: default;
@@ -366,9 +400,14 @@ a {
 /* Buttons */
 .hero-btns {
     display: flex;
-    gap: 12px;
+    gap: 16px; /* Increased gap for larger buttons */
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.hero-btns .btn {
+    padding: 14px 32px; /* Larger buttons */
+    font-size: 1rem;
 }
 
 .btn {
@@ -711,14 +750,30 @@ a {
 /* Education */
 .edu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider min-width */
     gap: 24px;
+}
+
+.edu-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.edu-logo-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    object-fit: contain;
 }
 
 .edu-card h3 {
     font-size: 1.1rem;
     color: var(--secondary);
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 .edu-card .school {

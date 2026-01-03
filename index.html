@@ -34,7 +34,7 @@
 
                 <div class="nav-actions">
                     <a href="Rutuja-Bothe-CV.pdf" target="_blank" class="btn-small btn-outline">View Resume</a>
-                    <a href="Rutuja-Bothe-CV.pdf" download class="btn-small btn-filled">Download Resume</a>
+                    <a href="Rutuja-Bothe-CV.pdf" download="Rutuja_Bothe_Resume.pdf" class="btn-small btn-filled">Download Resume</a>
                 </div>
             </div>
 
@@ -66,17 +66,26 @@
                 Engineering Efficiency through Data-Driven Strategies & Advanced Analytics
             </p>
 
-            <!-- 3. Education Cards (New) -->
+            <!-- 3. Education Cards (Hero specific) -->
             <div class="hero-education fade-in delay-2">
                 <div class="hero-edu-card glass-card">
-                    <span class="edu-label">MASTERS</span>
-                    <h3>Business Analytics</h3>
-                    <p>University of Galway</p>
+                    <div class="logo-container">
+                        <img src="assets/images/galway_logo.png" alt="University of Galway" class="edu-logo">
+                    </div>
+                    <div>
+                        <span class="edu-label">MASTERS</span>
+                        <h3>Business Analytics</h3>
+                    </div>
                 </div>
                 <div class="hero-edu-card glass-card">
-                    <span class="edu-label">BACHELORS</span>
-                    <h3>E&TC Engineering</h3>
-                    <p>Jspm's RSCOE</p>
+                    <div class="logo-container">
+                        <img src="assets/images/jspm_logo.png" alt="JSPM Logo" class="edu-logo no-zoom">
+                    </div>
+                     <!-- Using same logo as placeholder since I don't have the other one, user can swap -->
+                    <div>
+                         <span class="edu-label">BACHELORS</span>
+                         <h3>E&TC Engineering</h3>
+                    </div>
                 </div>
             </div>
 
@@ -163,13 +172,23 @@
              <h2 class="section-title"><span>02.</span> Academics</h2>
              <div class="edu-grid">
                 <div class="glass-card edu-card">
-                    <h3>MSc Business Analytics</h3>
-                    <p class="school">University of Galway</p>
+                    <div class="edu-card-header">
+                        <img src="assets/images/galway_logo.png" alt="University of Galway" class="edu-logo-small">
+                        <div>
+                            <h3>MSc Business Analytics</h3>
+                            <p class="school">University of Galway</p>
+                        </div>
+                    </div>
                     <p class="year">2025 - Present</p>
                 </div>
                 <div class="glass-card edu-card">
-                    <h3>BTech E&TC Engineering</h3>
-                    <p class="school">Jspm's RSCOE</p>
+                    <div class="edu-card-header">
+                        <img src="assets/images/jspm_logo.png" alt="JSPM Logo" class="edu-logo-small">
+                        <div>
+                            <h3>BTech E&TC Engineering</h3>
+                            <p class="school">Jspm's RSCOE</p>
+                        </div>
+                    </div>
                     <p class="year">2020 - 2024</p>
                 </div>
                 <div class="glass-card edu-card">
