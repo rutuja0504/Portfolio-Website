@@ -186,4 +186,100 @@ document.addEventListener('DOMContentLoaded', () => {
         sec.classList.add('hidden-section'); // style.css needs this class or JS adds opacity style
         observer.observe(sec);
     });
+    /* --- Typing Effect for About Me --- */
+    const terminalBody = document.getElementById('terminal-body');
+    if (terminalBody) {
+        // Define the content with structure for syntax highlighting styling
+        // We will construct the HTML string character by character but that's hard to animate smoothly with span tags injected mid-way.
+        // Easier approach: Array of objects representing tokens or lines.
+        
+        // Let's treat the text as raw text but we want colors. 
+        // Strategy: We will type out plain text for a "typing" feel, but that makes coloring hard.
+        // Better Strategy: usage of a list of "actions" or "segments".
+        
+        const lines = [
+            { text: "// User Profile Configuration\n", class: "token-comment" },
+            { text: "const ", class: "token-keyword" },
+            { text: "user", class: "token-variable" },
+            { text: " = {\n", class: "token-plain" },
+            
+            { text: "    name", class: "token-key" },
+            { text: ": ", class: "token-operator" },
+            { text: "\"Rutuja Bothe\"", class: "token-string" },
+            { text: ",\n", class: "token-plain" },
+
+            { text: "    location", class: "token-key" },
+            { text: ": ", class: "token-operator" },
+            { text: "\"Galway, Ireland\"", class: "token-string" },
+            { text: ",\n", class: "token-plain" },
+
+            { text: "    education", class: "token-key" },
+            { text: ": ", class: "token-operator" },
+            { text: "\"University of Galway\"", class: "token-string" },
+            { text: ",\n", class: "token-plain" },
+
+            { text: "    skills", class: "token-key" },
+            { text: ": [\n", class: "token-operator" },
+            { text: "        \"Python\", \"SQL\", \"Tableau\",\n", class: "token-string" },
+            { text: "        \"PowerBI\", \"React\", \"Spring Boot\"\n", class: "token-string" },
+            { text: "    ],\n", class: "token-plain" },
+
+            { text: "    status", class: "token-key" },
+            { text: ": ", class: "token-operator" },
+            { text: "\"Open to Work\"", class: "token-string" },
+            { text: "\n};", class: "token-plain" }
+        ];
+
+        let lineIndex = 0;
+        let charIndex = 0;
+        let isTyping = false;
+        
+        // Cursor Element
+        const cursorSpan = document.createElement('span');
+        cursorSpan.classList.add('cursor');
+        terminalBody.appendChild(cursorSpan);
+
+        function typeLine() {
+            if (lineIndex < lines.length) {
+                const currentSegment = lines[lineIndex];
+                const textToType = currentSegment.text;
+                const className = currentSegment.class;
+
+                // Create a span for the current segment if it's the start of it
+                let currentSpan = terminalBody.querySelector(`span[data-index="${lineIndex}"]`);
+                if (!currentSpan) {
+                    currentSpan = document.createElement('span');
+                    if (className) currentSpan.className = className;
+                    currentSpan.setAttribute('data-index', lineIndex);
+                    // Insert before cursor
+                    terminalBody.insertBefore(currentSpan, cursorSpan);
+                }
+
+                if (charIndex < textToType.length) {
+                    currentSpan.textContent += textToType.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeLine, Math.random() * 30 + 20); // Random typing speed
+                } else {
+                    lineIndex++;
+                    charIndex = 0;
+                    setTimeout(typeLine, 50); // Small pause between segments
+                }
+            }
+        }
+
+        // Trigger typing when section is visible
+        const terminalObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !isTyping) {
+                    isTyping = true;
+                    // Clear initial if needed (though it's empty in HTML)
+                    // Start typing
+                    typeLine();
+                    terminalObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        terminalObserver.observe(terminalBody);
+    }
 });

@@ -569,11 +569,37 @@ a {
 .green { background: #27c93f; }
 
 .terminal-body {
-    padding: 24px;
-    font-family: 'Consolas', monospace;
     color: #a5b4fc;
     font-size: 0.95rem;
+    min-height: 200px; /* Prevent layout shift */
+    white-space: pre-wrap; /* Preserve spacing */
+    line-height: 1.6;
 }
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: var(--secondary);
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Syntax Highlighting */
+.token-keyword { color: #c678dd; } /* Purple (const, var, function) */
+.token-function { color: #61afef; } /* Blue (function names) */
+.token-variable { color: #e5c07b; } /* Yellow (variables) */
+.token-key { color: #e06c75; } /* Red (object keys) */
+.token-string { color: #98c379; } /* Green */
+.token-number { color: #d19a66; } /* Orange */
+.token-comment { color: #7f848e; font-style: italic; } /* Grey */
+.token-operator { color: #56b6c2; } /* Cyan (=, +, :) */
+.token-plain { color: #abb2bf; } /* Default text */
 
 /* Skills Section */
 .skills-grid {
