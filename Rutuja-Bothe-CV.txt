@@ -1,0 +1,52 @@
+
+
+
+Education
+
+Rutuja Bothe
+R.Bothe1@universityofgalway.ie | +353 892012914 | Corrib Village, Galway
+
+Education
+University Of Galway | MSc in Business Analytics	Sep 2025 - Present | Ireland Coursework: Project Management, Database Systems, Advanced Business Programming, Data Science, Data Visualisation, Business Modelling, Statistical Techniques, Strategic Management, Decision Theory and AI, Big Data Analysis, Enterprise Systems
+
+Jspm's RSCOE | BTech in Electronics and Telecommunication Engineering	Sep 2020 - Sep 2024 | India Coursework : Object Oriented Programming, Data Structures and Algorithms, Internet of Things, Web Technology, Engineering Mathematics, Python Programming, Microcontrollers, Advance Java, Business Management, Computer Network, Cloud Computing
+
+Professional  Experience
+Capgemini | Software Developer	Sep 2024 - Aug 2025 | India
+Worked as a Software Developer at Capgemini, contributing to a full-stack Java project. The application featured a React-based frontend, a Spring Boot RESTful backend, and SQL for data management. I was involved in developing user interfaces, implementing backend services, and integrating the application with the database.
+
+The Data Tech Labs | Data Scientist Intern	Jun 2024 - Aug 2024 | India Analyzed large datasets to extract actionable insights using Statistical Methods, Machine Learning, and Data Visualization. Utilized Python, SQL, and Data Modeling techniques to build predictive models and support data-driven decision making.
+Edulyt India | Data Analyst Intern	Mar 2024 - May 2024 | India
+Collected, cleaned, and analyzed data using Excel to ensure accuracy and consistency across reports. Developed interactive dashboards and visualizations in Tableau to track key metrics and business performance. Presented insights and findings to Stakeholders through clear reports and presentations, enabling informed decision making and improved operational outcomes.
+
+Hackveda | SQL Programmer Intern	Dec 2023 - Feb 2024 | India
+Designed, wrote, and optimized SQL queries to extract, manipulate, and analyze data for monitoring and reporting key performance indicators (KPIs). Developed stored procedures, views, and complex joins to support KPI dashboards, reports, and application requirements.
+
+Skills
+Data Visualization: Power BI, Tableau, Advanced Excel, KPI Dashboards | Programming: Python, R, Java, SQL | Frameworks: React, Spring, Deep Learning, GenAI | Databases: PostgreSQL, MongoDB, Database Management, ERD, Hadoop, Big Data | Data Science: Statistics, Probability, Linear Algebra, Calculus, AI, Machine Learning, Image Preprocessing
+
+Courses
+Microsoft Azure Data Fundamentals
+Gained foundational knowledge of core data concepts and how they are implemented using Microsoft Azure services. Learned about relational and non-relational data, data workloads, and basic analytics and reporting in a cloud environment.
+
+Google Data Analytics Professional Certificate
+Completed comprehensive training in data cleaning, analysis, visualization, and interpretation using tools like SQL, R, and spreadsheets to support data-driven decision making.
+
+Projects
+Predictive Analytics for Customer Retention	Sep 2025 - Present
+Identify at-risk customers and improve retention using historical data, statistical analysis, and machine learning techniques.
+
+On Demand Car Wash System	Sep 2024 - Sep 2025
+Developed using Java, React, and SQL, enabling customers to schedule services, track bookings, and receive real-time notifications. Implemented front-end interfaces, back-end logic, and database management to ensure seamless user experience and efficient operations.
+
+App Based Leaf Disease Detection	Sep 2023 - Sep 2024
+Developed using image preprocessing and deep learning, enabling accurate identification of plant diseases from images. Implemented models for classification and integrated them into a user-friendly application for real-time diagnostics.
+
+IOT Based Coal Mine Safety System	Sep 2022 - Sep 2023
+Developed to monitor environmental conditions in real-time, using sensors to detect hazards and alert miners. Implemented data collection, processing, and alert mechanisms to enhance safety and prevent accidents.
+
+Publications
+App Based Leaf Disease Detection Using Image Pre-Processing & Deep Learning, ETMICS, Springer 2025
+
+Interests
+Pre-National Level Volleyball Player
