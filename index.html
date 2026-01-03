@@ -16,14 +16,28 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">RB.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Stack</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#contact" class="btn-nav">Contact</a></li>
-            </ul>
+            <div class="nav-left">
+                <a href="#" class="logo">RB.</a>
+                <span class="logo-text">RUTUJA BOTHE</span>
+            </div>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="Rutuja-Bothe-CV.pdf" target="_blank" class="btn-small btn-outline">View Resume</a>
+                    <a href="Rutuja-Bothe-CV.pdf" download class="btn-small btn-filled">Download Resume</a>
+                </div>
+            </div>
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -36,24 +50,63 @@
     <header class="hero" id="home">
         <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
         <div class="container hero-content">
-            <h2 class="fade-in">Hi, I'm</h2>
+            
+            <!-- 1. Profile Image -->
+            <div class="hero-profile-container fade-in">
+                <div class="hero-profile-img">
+                    <span>RB</span>
+                </div>
+            </div>
+
+            <!-- 2. Name & Title -->
             <h1 class="fade-in delay-1">Rutuja Bothe</h1>
+            <h2 class="fade-in delay-1">Business Analyst & Data Specialist</h2>
+            
             <p class="fade-in delay-2">
-                Business Analyst & Data Specialist <br>
-                Turning raw data into strategic business impact through advanced analytics and visualization.
+                Engineering Efficiency through Data-Driven Strategies & Advanced Analytics
             </p>
+
+            <!-- 3. Education Cards (New) -->
+            <div class="hero-education fade-in delay-2">
+                <div class="hero-edu-card glass-card">
+                    <span class="edu-label">MASTERS</span>
+                    <h3>Business Analytics</h3>
+                    <p>University of Galway</p>
+                </div>
+                <div class="hero-edu-card glass-card">
+                    <span class="edu-label">BACHELORS</span>
+                    <h3>E&TC Engineering</h3>
+                    <p>Jspm's RSCOE</p>
+                </div>
+            </div>
+
+            <!-- 4. Skills Pills (New) -->
+            <div class="hero-skills fade-in delay-3">
+                <span class="hero-skill">Python</span>
+                <span class="hero-skill">SQL</span>
+                <span class="hero-skill">Tableau</span>
+                <span class="hero-skill">PowerBI</span>
+                <span class="hero-skill">React</span>
+                <span class="hero-skill">Predictive Modeling</span>
+            </div>
+
+            <!-- 5. Action Buttons -->
             <div class="hero-btns fade-in delay-3">
+                <a href="Rutuja-Bothe-CV.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
-        <div class="scroll-indicator">
+        
+        <!-- Scroll Indicator -->
+        <!-- <div class="scroll-indicator">
             <div class="scroll-line"></div>
             <span>SCROLL</span>
-        </div>
+        </div> --> 
+        <!-- Commented out scroll indicator as it might clutter the new layout, can restore if needed -->
     </header>
 
-    <!-- About Section -->
+    <!-- 1. About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title"><span>01.</span> About Me</h2>
@@ -104,49 +157,31 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- 2. Academics (Education) Section -->
+    <section id="academics" class="section">
         <div class="container">
-            <h2 class="section-title"><span>02.</span> Tech Stack</h2>
-            <div class="skills-grid">
-                
-                <div class="glass-card skill-category">
-                    <h3>Data Analysis</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">Advanced Excel</span>
-                        <span class="skill-tag">Azure</span>
-                    </div>
+             <h2 class="section-title"><span>02.</span> Academics</h2>
+             <div class="edu-grid">
+                <div class="glass-card edu-card">
+                    <h3>MSc Business Analytics</h3>
+                    <p class="school">University of Galway</p>
+                    <p class="year">2025 - Present</p>
                 </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Visualization</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Google Looker</span>
-                        <span class="skill-tag">KPI Dashboards</span>
-                    </div>
+                <div class="glass-card edu-card">
+                    <h3>BTech E&TC Engineering</h3>
+                    <p class="school">Jspm's RSCOE</p>
+                    <p class="year">2020 - 2024</p>
                 </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
+                <div class="glass-card edu-card">
+                    <h3>Google Data Certificate</h3>
+                    <p class="school">Coursera</p>
+                    <p class="year">Professional Cert.</p>
                 </div>
-
-            </div>
+             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- 3. Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title"><span>03.</span> Experience</h2>
@@ -210,10 +245,52 @@
         </div>
     </section>
 
-    <!-- Interactive Analytics Demo -->
-    <section id="analytics-demo" class="section analytics-section">
+    <!-- 4. Skills Section -->
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title"><span>04.</span> Analytics Demo</h2>
+            <h2 class="section-title"><span>04.</span> Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="glass-card skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Advanced Excel</span>
+                        <span class="skill-tag">Azure</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3>Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Google Looker</span>
+                        <span class="skill-tag">KPI Dashboards</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Demo (Unnumbered Visual Break) -->
+    <section class="section analytics-section">
+        <div class="container">
+            <h2 class="section-title">Analytics Demo</h2>
             <div class="glass-card chart-container">
                 <div class="chart-header">
                     <h3>Active Business Metrics</h3>
@@ -228,10 +305,10 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- 5. Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title"><span>05.</span> Featured Work</h2>
+            <h2 class="section-title"><span>05.</span> Projects</h2>
             <div class="projects-wrapper">
                 
                 <div class="glass-card project-card">
@@ -278,34 +355,30 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="section">
+    <!-- 6. Publication Section (NEW) -->
+    <section id="publication" class="section">
         <div class="container">
-             <h2 class="section-title"><span>06.</span> Education</h2>
-             <div class="edu-grid">
-                <div class="glass-card edu-card">
-                    <h3>MSc Business Analytics</h3>
-                    <p class="school">University of Galway</p>
-                    <p class="year">2025 - Present</p>
+            <h2 class="section-title"><span>06.</span> Publication</h2>
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 40px; text-align: center;">
+                <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 15px;">App Based Leaf Disease Detection</h3>
+                <h4 style="color: var(--secondary); font-weight: 500; margin-bottom: 20px;">Using Image Pre-Processing & Deep Learning</h4>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Published in <strong>ETMICS, Springer 2025</strong>. 
+                    <br>This research explores advanced computer vision techniques for agricultural diagnostics.
+                </p>
+                <div class="tech-stack" style="justify-content: center;">
+                    <span class="tech-item">Research</span>
+                    <span class="tech-item">Deep Learning</span>
+                    <span class="tech-item">Springer</span>
                 </div>
-                <div class="glass-card edu-card">
-                    <h3>BTech E&TC Engineering</h3>
-                    <p class="school">Jspm's RSCOE</p>
-                    <p class="year">2020 - 2024</p>
-                </div>
-                <div class="glass-card edu-card">
-                    <h3>Google Data Certificate</h3>
-                    <p class="school">Coursera</p>
-                    <p class="year">Professional Cert.</p>
-                </div>
-             </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- 7. Contact Section -->
     <section id="contact" class="section">
         <div class="container contact-wrapper">
-            <h2 class="section-title"><span>07.</span> Get In Touch</h2>
+            <h2 class="section-title"><span>07.</span> Contact</h2>
             <form class="contact-form glass-card" onsubmit="event.preventDefault(); alert('Message simulation sent!');">
                 <div class="form-group">
                     <label>Name</label>

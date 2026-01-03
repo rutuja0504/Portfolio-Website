@@ -87,7 +87,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 18px 0;
+    padding: 12px 0;
     background: var(--nav-glass);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -98,57 +98,126 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%; /* Override default container width */
+    padding: 0 40px; /* Push to edges but keep safe spacing */
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Left Section: Logo + Name */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Slightly larger for balance */
     font-weight: 700;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--secondary); /* Solid Blue */
+    background: none; /* Remove gradient for solid look if desired, or keep. Let's try solid blue based on image */
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: initial;
+    color: #4f96ff; /* A bright, neat blue */
     letter-spacing: -0.5px;
 }
 
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4f96ff; /* Match logo blue */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Right Section: Links + Actions */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Increased gap for cleaner separation */
+}
+
+/* Links */
 .nav-links {
     display: flex;
     gap: 32px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li a {
-    font-size: 0.95rem;
+    font-size: 0.8rem; /* Neater, smaller font */
     font-weight: 500;
     color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
+    color: #4f96ff; /* Match highlight to logo */
+    text-shadow: 0 0 10px rgba(79, 150, 255, 0.3);
+}
+
+/* Actions */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* New Button Styles */
+.btn-small {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,0.2);
     color: var(--text-primary);
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    background: transparent;
 }
 
-.btn-nav {
-    padding: 8px 20px;
-    border-radius: 50px;
-    border: 1px solid rgba(99,102,241,0.5);
-    color: var(--primary) !important;
-    transition: 0.3s;
+.btn-outline:hover {
+    border-color: var(--primary);
+    color: #fff;
+    background: rgba(99,102,241,0.1);
 }
 
-.btn-nav:hover {
-    background: var(--accent-gradient);
-    border-color: transparent;
-    color: #fff !important;
-    box-shadow: var(--glow-primary);
+.btn-filled {
+    background: var(--primary);
+    color: #fff;
+    border: 1px solid var(--primary);
+}
+
+.btn-filled:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh; /* Allow it to grow if content overflows */
+    padding: 100px 0 40px; /* Reduced top/bottom padding */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 60px;
     text-align: center;
 }
 
@@ -163,46 +232,153 @@ a {
 
 .hero-content {
     z-index: 2;
-    max-width: 800px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Reduced gap */
 }
 
+/* 1. Profile Image */
+.hero-profile-container {
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.hero-profile-img {
+    width: 120px; /* Smaller image */
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 2px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero-profile-img span {
+    font-size: 2.5rem; /* Smaller initials */
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+
+/* Typography */
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: 3rem; /* Smaller heading */
     line-height: 1.1;
-    margin-bottom: 16px;
+    margin: 0;
     background: linear-gradient(to right, #fff, #94a3b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Smaller subtitle */
     font-weight: 400;
     color: var(--secondary);
-    margin-bottom: 24px;
+    margin: 0;
     letter-spacing: 1px;
 }
 
 .hero p {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1rem; /* Smaller text */
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 5px auto 20px; /* Reduced margins */
+    font-weight: 300;
 }
 
-.hero-btns {
+/* 3. Education Cards (Hero specific) */
+.hero-education {
     display: flex;
-    gap: 16px;
+    gap: 15px; /* Reduced gap */
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px; /* Reduced margin */
+    flex-wrap: wrap;
+}
+
+.hero-edu-card {
+    flex: 1;
+    min-width: 220px; /* Smaller min-width */
+    max-width: 300px;
+    padding: 15px; /* Reduced padding */
+    text-align: left;
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+.hero-edu-card .edu-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.hero-edu-card h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.hero-edu-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* 4. Skills Pills (Hero specific) */
+.hero-skills {
+    display: flex;
+    gap: 8px; /* Reduced gap */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px; /* Reduced margin */
+}
+
+.hero-skill {
+    padding: 5px 14px; /* Smaller pills */
+    border-radius: 50px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.hero-skill:hover {
+    background: rgba(99,102,241,0.15);
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.hero-btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .btn {
-    padding: 14px 32px;
-    border-radius: 8px;
+    padding: 10px 24px; /* Smaller buttons */
+    border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
-    font-size: 1rem;
-    transition: transform 0.2s;
+    font-size: 0.9rem;
+    transition: transform 0.2s, background 0.2s;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -214,7 +390,8 @@ a {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    opacity: 0.9;
+    opacity: 0.95;
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
 }
 
 .btn-secondary {
@@ -227,27 +404,10 @@ a {
 .btn-secondary:hover {
     background: rgba(255,255,255,0.1);
     border-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    opacity: 0.6;
-    animation: bounce 2s infinite;
-}
-
-.scroll-line {
-    width: 1px;
-    height: 60px;
-    background: linear-gradient(to bottom, var(--primary), transparent);
-}
-
+/* Scroll Animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
     40% {transform: translateX(-50%) translateY(-10px);}
@@ -632,9 +792,13 @@ a {
     .navbar {
         padding: 15px;
     }
+
+    .nav-actions {
+        display: none;
+    }
     
     .nav-links {
-        display: none; /* Mobile menu logic in JS needs to support basic toggle or just hidden for simplicity in this pure version, we'll assume basic stacking or hidden */
+        display: none; /* Mobile menu logic in JS needs to support basic toggle */
         position: absolute;
         top: 100%;
         left: 0;
