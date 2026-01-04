@@ -463,13 +463,13 @@ a {
 
 /* Section Common */
 .section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .section-title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     position: relative;
     display: inline-block;
     left: 50%;
@@ -768,27 +768,7 @@ a {
     font-family: monospace;
 }
 
-/* Analytics Chart Section */
-.analytics-section {
-    background: rgba(15, 23, 42, 0.4);
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-}
 
-.chart-container {
-    padding: 20px;
-}
-
-.chart-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.chart-controls img {
-    /* If we used icons, but let's stick to buttons */
-}
 
 /* Education */
 .edu-grid {
