@@ -817,9 +817,13 @@ a {
 }
 
 
+
+
 .edu-logo-small img.galway-zoom {
-    transform: scale(5.5);
+    transform: scale(2.8);
 }
+
+
 
 .galway-wrapper {
     background: transparent !important;
