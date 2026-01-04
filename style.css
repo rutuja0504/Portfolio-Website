@@ -683,13 +683,21 @@ a {
     box-shadow: 0 0 10px var(--secondary);
 }
 
+.timeline-content {
+    position: relative; /* Ensure date positions relative to this */
+}
+
 .timeline-date {
     font-size: 0.85rem;
     color: var(--secondary);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 8px;
     font-weight: 600;
+    
+    /* Absolute Positioning */
+    position: absolute;
+    top: 32px; /* Match glass-card padding */
+    right: 32px;
 }
 
 .timeline-content h3 {
