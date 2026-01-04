@@ -927,6 +927,110 @@ a {
     color: var(--secondary);
 }
 
+/* Contact Box */
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-box h3 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text override inline style if needed or just cleaner */
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Changed from space-between */
+    gap: 20px; /* Added gap between icon and text */
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.contact-item:hover .contact-value {
+    color: #fff;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Fixed width for alignment */
+    height: 24px;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.contact-item:hover .contact-icon {
+    color: var(--primary);
+}
+
+.contact-label {
+    display: none; 
+}
+
+.contact-value {
+    font-weight: 500;
+    color: #fff;
+    text-align: left; /* Changed from right */
+    font-size: 0.95rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-value {
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+
+/* Responsive specifics for contact box if needed, though flex-col usually handles it well. 
+   On very small screens, stack label and value? */
+@media (max-width: 480px) {
+    .contact-item {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    .contact-value {
+        text-align: left;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {

@@ -441,25 +441,34 @@
     <section id="contact" class="section">
         <div class="container contact-wrapper">
             <h2 class="section-title"><span>08.</span> Contact</h2>
-            <form class="contact-form glass-card" onsubmit="event.preventDefault(); alert('Message simulation sent!');">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" placeholder="John Doe" required>
+            <div class="glass-card contact-box">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; vertical-align: middle;"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    Connect with me
+                </h3>
+                <div class="contact-links">
+                    <a href="mailto:R.Bothe1@universityofgalway.ie" class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Email Icon (Envelope) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <span class="contact-value">R.Bothe1@universityofgalway.ie</span>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Location Icon (Map Pin) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <span class="contact-value">Galway, Ireland</span>
+                    </div>
+                    <a href="https://www.linkedin.com/" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <!-- LinkedIn Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </div>
+                        <span class="contact-value">Connect on LinkedIn</span>
+                    </a>
                 </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="john@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="4" placeholder="Hello..." required></textarea>
-                </div>
-                <button class="btn btn-primary" style="width: 100%;">Send Message</button>
-            </form>
-
-            <div class="contact-info">
-                <a href="mailto:R.Bothe1@universityofgalway.ie" class="email-link">R.Bothe1@universityofgalway.ie</a>
-                <p style="color: var(--text-secondary);">Galway, Ireland</p>
             </div>
         </div>
     </section>
