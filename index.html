@@ -1,482 +1,705 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rutuja Bothe | Business Analytics Portfolio</title>
-    <meta name="description" content="Portfolio of Rutuja Bothe - Business Analyst specializing in Data Insights, Visualization, and Strategic Decision Making.">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Portfolio of Rutuja Bothe - Business Analyst specializing in Data Insights, Visualization, and Strategic Decision Making."
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Using Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="nav-left">
-                <a href="#" class="logo">RB.</a>
-                <span class="logo-text">RUTUJA BOTHE</span>
-            </div>
-            
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#academics">Academics</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#publication">Publication</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="nav-actions">
-                    <a href="Rutuja-Bothe-CV.pdf" target="_blank" class="btn-small btn-outline">View Resume</a>
-                    <a href="Rutuja-Bothe-CV.pdf" download="Rutuja_Bothe_Resume.pdf" class="btn-small btn-filled">Download Resume</a>
-                </div>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container nav-container">
+        <div class="nav-left">
+          <a href="#" class="logo">RB.</a>
+          <span class="logo-text">RUTUJA BOTHE</span>
         </div>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a
+              href="Rutuja-Bothe-CV.pdf"
+              target="_blank"
+              class="btn-small btn-outline"
+              >View Resume</a
+            >
+            <a
+              href="Rutuja-Bothe-CV.pdf"
+              download="Rutuja_Bothe_Resume.pdf"
+              class="btn-small btn-filled"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero" id="home">
-        <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
-        <div class="container hero-content">
-            
-            <!-- 1. Profile Image -->
-            <div class="hero-profile-container fade-in delay-1">
-                <div class="hero-profile-img">
-                    <img src="assets/images/profile_final.jpg" alt="Rutuja Bothe">
-                </div>
-            </div>
-
-            <!-- 2. Name & Title -->
-            <h1 class="fade-in delay-1">Rutuja Bothe</h1>
-            <h2 class="fade-in delay-1">Business Analyst & Data Specialist</h2>
-            
-            <p class="fade-in delay-2">
-                Engineering Efficiency through Data-Driven Strategies & Advanced Analytics
-            </p>
-
-            <!-- 3. Education Cards (Hero specific) -->
-            <div class="hero-education fade-in delay-2">
-                <div class="hero-edu-card glass-card">
-                    <div class="logo-container">
-                        <img src="assets/images/galway_logo.png" alt="University of Galway" class="edu-logo">
-                    </div>
-                    <div>
-                        <span class="edu-label">MASTERS</span>
-                        <h3>Business Analytics</h3>
-                    </div>
-                </div>
-                <div class="hero-edu-card glass-card">
-                    <div class="logo-container">
-                        <img src="assets/images/jspm_logo.png" alt="JSPM Logo" class="edu-logo no-zoom">
-                    </div>
-                     <!-- Using same logo as placeholder since I don't have the other one, user can swap -->
-                    <div>
-                         <span class="edu-label">BACHELORS</span>
-                         <h3>E&TC Engineering</h3>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Skills Pills (New) -->
-            <div class="hero-skills fade-in delay-3">
-                <span class="hero-skill">Python</span>
-                <span class="hero-skill">SQL</span>
-                <span class="hero-skill">Tableau</span>
-                <span class="hero-skill">PowerBI</span>
-                <span class="hero-skill">React</span>
-                <span class="hero-skill">Predictive Modeling</span>
-            </div>
-
-            <!-- 5. Action Buttons -->
-            <div class="hero-btns fade-in delay-3">
-                <a href="Rutuja-Bothe-CV.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
+      <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
+      <div class="container hero-content">
+        <!-- 1. Profile Image -->
+        <div class="hero-profile-container fade-in delay-1">
+          <div class="hero-profile-img">
+            <img src="assets/images/profile_final.jpg" alt="Rutuja Bothe" />
+          </div>
         </div>
-        
-        <!-- Scroll Indicator -->
-        <!-- <div class="scroll-indicator">
+
+        <!-- 2. Name & Title -->
+        <h1 class="fade-in delay-1">Rutuja Bothe</h1>
+        <h2 class="fade-in delay-1">Business Analyst & Data Specialist</h2>
+
+        <p class="fade-in delay-2">
+          Engineering Efficiency through Data-Driven Strategies & Advanced
+          Analytics
+        </p>
+
+        <!-- 3. Education Cards (Hero specific) -->
+        <div class="hero-education fade-in delay-2">
+          <div class="hero-edu-card glass-card">
+            <div class="logo-container">
+              <img
+                src="assets/images/galway_logo.png"
+                alt="University of Galway"
+                class="edu-logo"
+              />
+            </div>
+            <div>
+              <span class="edu-label">MASTERS</span>
+              <h3>Business Analytics</h3>
+            </div>
+          </div>
+          <div class="hero-edu-card glass-card">
+            <div class="logo-container">
+              <img
+                src="assets/images/jspm_logo.png"
+                alt="JSPM Logo"
+                class="edu-logo no-zoom"
+              />
+            </div>
+            <!-- Using same logo as placeholder since I don't have the other one, user can swap -->
+            <div>
+              <span class="edu-label">BACHELORS</span>
+              <h3>E&TC Engineering</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Skills Pills (New) -->
+        <div class="hero-skills fade-in delay-3">
+          <span class="hero-skill">Python</span>
+          <span class="hero-skill">SQL</span>
+          <span class="hero-skill">Tableau</span>
+          <span class="hero-skill">PowerBI</span>
+          <span class="hero-skill">React</span>
+          <span class="hero-skill">Predictive Modeling</span>
+        </div>
+
+        <!-- 5. Action Buttons -->
+        <div class="hero-btns fade-in delay-3">
+          <a
+            href="Rutuja-Bothe-CV.pdf"
+            target="_blank"
+            class="btn btn-secondary"
+            >View Resume</a
+          >
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <!-- <div class="scroll-indicator">
             <div class="scroll-line"></div>
             <span>SCROLL</span>
-        </div> --> 
-        <!-- Commented out scroll indicator as it might clutter the new layout, can restore if needed -->
+        </div> -->
+      <!-- Commented out scroll indicator as it might clutter the new layout, can restore if needed -->
     </header>
 
     <!-- 1. About Section -->
     <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>01.</span> About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="lead">Bridging the technical and the strategic.</p>
-                    <p>
-                        I am currently pursuing an <strong>MSc in Business Analytics</strong> at the University of Galway. With a solid foundation in Engineering and Software Development, I possess a unique ability to understand complex technical systems and translate them into actionable business insights.
-                    </p>
-                    <p>
-                        My expertise focuses on Data Visualization, Predictive Modeling, and Process Optimization. I don't just analyze data; I tell stories with it.
-                    </p>
-                    <div class="stat-box">
-                        <div class="stat">
-                            <h3>4+</h3>
-                            <p>Roles</p>
-                        </div>
-                        <div class="stat">
-                            <h3>4+</h3>
-                            <p>Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h3>MSc</h3>
-                            <p>Candidate</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="terminal-card">
-                        <div class="terminal-header">
-                            <div class="dot red"></div>
-                            <div class="dot yellow"></div>
-                            <div class="dot green"></div>
-                        </div>
-                        <div class="terminal-body" id="terminal-body">
-                            <!-- Content will be typed via JS -->
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead">Bridging the technical and the strategic.</p>
+            <p>
+              I am currently pursuing an
+              <strong>MSc in Business Analytics</strong> at the University of
+              Galway. With a solid foundation in Engineering and Software
+              Development, I possess a unique ability to understand complex
+              technical systems and translate them into actionable business
+              insights.
+            </p>
+            <p>
+              My expertise focuses on Data Visualization, Predictive Modeling,
+              and Process Optimization. I don't just analyze data; I tell
+              stories with it.
+            </p>
+            <div class="stat-box">
+              <div class="stat">
+                <h3>4+</h3>
+                <p>Roles</p>
+              </div>
+              <div class="stat">
+                <h3>4+</h3>
+                <p>Projects</p>
+              </div>
+              <div class="stat">
+                <h3>MSc</h3>
+                <p>Candidate</p>
+              </div>
             </div>
+          </div>
+          <div class="about-visual">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+              </div>
+              <div class="terminal-body" id="terminal-body">
+                <!-- Content will be typed via JS -->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 2. Academics (Education) Section -->
     <section id="academics" class="section">
-        <div class="container">
-             <h2 class="section-title"><span>02.</span> Academics</h2>
-             <div class="timeline">
-                
-                <!-- Master's -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card edu-card">
-                        <div class="timeline-date">2025 - Present</div>
-                        <div class="edu-card-header">
-                            <div class="edu-logo-small galway-wrapper">
-                                <img src="assets/images/galway_logo.png" alt="University of Galway" class="galway-zoom">
-                            </div>
-                            <div>
-                                <h3>MSc Business Analytics</h3>
-                                <p class="school">University of Galway</p>
-                                <p class="edu-meta">📍 Ireland &nbsp;|&nbsp; <strong>GPA:</strong> 4.0/4.0</p>
-                            </div>
-                        </div>
-                        <div class="edu-details">
-                            <h4>Coursework:</h4>
-                            <p>Project Management, Database Systems, Advanced Business Programming, Data Science, Data Visualisation, Business Modelling, Statistical Techniques, Strategic Management, Decision Theory and AI, Big Data Analysis, Enterprise Systems</p>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title"><span>02.</span> Academics</h2>
+        <div class="timeline">
+          <!-- Master's -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card edu-card">
+              <div class="timeline-date">2025 - Present</div>
+              <div class="edu-card-header">
+                <div class="edu-logo-small galway-wrapper">
+                  <img
+                    src="assets/images/galway_logo.png"
+                    alt="University of Galway"
+                    class="galway-zoom"
+                  />
                 </div>
-
-                <!-- Bachelor's -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card edu-card">
-                        <div class="timeline-date">2020 - 2024</div>
-                        <div class="edu-card-header">
-                            <div class="edu-logo-small">
-                                <img src="assets/images/jspm_logo.png" alt="JSPM Logo">
-                            </div>
-                            <div>
-                                <h3>BTech E&TC Engineering</h3>
-                                <p class="school">Jspm's RSCOE</p>
-                                <p class="edu-meta">📍 India &nbsp;|&nbsp; <strong>GPA:</strong> 3.4/4.0</p>
-                            </div>
-                        </div>
-                        <div class="edu-details">
-                            <h4>Coursework:</h4>
-                            <p>Object Oriented Programming, Data Structures and Algorithms, Internet of Things, Web Technology, Engineering Mathematics, Python Programming, Microcontrollers, Advance Java, Business Management, Computer Network, Cloud Computing</p>
-                        </div>
-                    </div>
+                <div>
+                  <h3>MSc Business Analytics</h3>
+                  <p class="school">University of Galway</p>
+                  <p class="edu-meta">
+                    📍 Ireland &nbsp;|&nbsp; <strong>GPA:</strong> 4.0/4.0
+                  </p>
                 </div>
+              </div>
+              <div class="edu-details">
+                <h4>Coursework:</h4>
+                <p>
+                  Project Management, Database Systems, Advanced Business
+                  Programming, Data Science, Data Visualisation, Business
+                  Modelling, Statistical Techniques, Strategic Management,
+                  Decision Theory and AI, Big Data Analysis, Enterprise Systems
+                </p>
+              </div>
+            </div>
+          </div>
 
-             </div>
+          <!-- Bachelor's -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card edu-card">
+              <div class="timeline-date">2020 - 2024</div>
+              <div class="edu-card-header">
+                <div class="edu-logo-small">
+                  <img src="assets/images/jspm_logo.png" alt="JSPM Logo" />
+                </div>
+                <div>
+                  <h3>BTech E&TC Engineering</h3>
+                  <p class="school">Jspm's RSCOE</p>
+                  <p class="edu-meta">
+                    📍 India &nbsp;|&nbsp; <strong>GPA:</strong> 3.4/4.0
+                  </p>
+                </div>
+              </div>
+              <div class="edu-details">
+                <h4>Coursework:</h4>
+                <p>
+                  Object Oriented Programming, Data Structures and Algorithms,
+                  Internet of Things, Web Technology, Engineering Mathematics,
+                  Python Programming, Microcontrollers, Advance Java, Business
+                  Management, Computer Network, Cloud Computing
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 3. Experience Section -->
     <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>03.</span> Experience</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-date">Sep 2024 - Aug 2025</div>
-                        <h3>Software Developer</h3>
-                        <h4>Capgemini | India</h4>
-                        <p style="color: var(--text-secondary);">Worked as a Software Developer at Capgemini, contributing to a full-stack Java project. The application featured a React-based frontend, a Spring Boot RESTful backend, and SQL for data management. I was involved in developing user interfaces, implementing backend services, and integrating the application with the database.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-date">Jun 2024 - Aug 2024</div>
-                        <h3>Data Scientist Intern</h3>
-                        <h4>The Data Tech Labs | India</h4>
-                        <p style="color: var(--text-secondary);">Analyzed large datasets to extract actionable insights using Statistical Methods, Machine Learning, and Data Visualization. Utilized Python, SQL, and Data Modeling techniques to build predictive models and support data-driven decision making.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-date">Mar 2024 - May 2024</div>
-                        <h3>Data Analyst Intern</h3>
-                        <h4>Edulyt India | India</h4>
-                        <p style="color: var(--text-secondary);">Collected, cleaned, and analyzed data using Excel to ensure accuracy and consistency across reports. Developed interactive dashboards and visualizations in Tableau to track key metrics and business performance. Presented insights and findings to Stakeholders through clear reports and presentations, enabling informed decision making and improved operational outcomes.</p>
-                    </div>
-                </div>
-
-                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-date">Dec 2023 - Feb 2024</div>
-                        <h3>SQL Programmer Intern</h3>
-                        <h4>Hackveda | India</h4>
-                        <p style="color: var(--text-secondary);">Designed, wrote, and optimized SQL queries to extract, manipulate, and analyze data for monitoring and reporting key performance indicators (KPIs). Developed stored procedures, views, and complex joins to support KPI dashboards, reports, and application requirements.</p>
-                    </div>
-                </div>
-
+      <div class="container">
+        <h2 class="section-title"><span>03.</span> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-date">Sep 2024 - Aug 2025</div>
+              <h3>Software Developer</h3>
+              <h4>Capgemini | India</h4>
+              <p style="color: var(--text-secondary)">
+                Worked as a Software Developer at Capgemini, contributing to a
+                full-stack Java project. The application featured a React-based
+                frontend, a Spring Boot RESTful backend, and SQL for data
+                management. I was involved in developing user interfaces,
+                implementing backend services, and integrating the application
+                with the database.
+              </p>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-date">Jun 2024 - Aug 2024</div>
+              <h3>Data Scientist Intern</h3>
+              <h4>The Data Tech Labs | India</h4>
+              <p style="color: var(--text-secondary)">
+                Analyzed large datasets to extract actionable insights using
+                Statistical Methods, Machine Learning, and Data Visualization.
+                Utilized Python, SQL, and Data Modeling techniques to build
+                predictive models and support data-driven decision making.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-date">Mar 2024 - May 2024</div>
+              <h3>Data Analyst Intern</h3>
+              <h4>Edulyt India | India</h4>
+              <p style="color: var(--text-secondary)">
+                Collected, cleaned, and analyzed data using Excel to ensure
+                accuracy and consistency across reports. Developed interactive
+                dashboards and visualizations in Tableau to track key metrics
+                and business performance. Presented insights and findings to
+                Stakeholders through clear reports and presentations, enabling
+                informed decision making and improved operational outcomes.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-date">Dec 2023 - Feb 2024</div>
+              <h3>SQL Programmer Intern</h3>
+              <h4>Hackveda | India</h4>
+              <p style="color: var(--text-secondary)">
+                Designed, wrote, and optimized SQL queries to extract,
+                manipulate, and analyze data for monitoring and reporting key
+                performance indicators (KPIs). Developed stored procedures,
+                views, and complex joins to support KPI dashboards, reports, and
+                application requirements.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 4. Skills Section -->
     <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>04.</span> Skills</h2>
-            <div class="skills-grid">
-                
-                <div class="glass-card skill-category">
-                    <h3>Data Visualization</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Advanced Excel</span>
-                        <span class="skill-tag">KPI Dashboards</span>
-                    </div>
-                </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Programming</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Spring</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">GenAI</span>
-                    </div>
-                </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Database Management</span>
-                        <span class="skill-tag">ERD</span>
-                        <span class="skill-tag">Hadoop</span>
-                        <span class="skill-tag">Big Data</span>
-                    </div>
-                </div>
-
-                <div class="glass-card skill-category">
-                    <h3>Data Science</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Statistics</span>
-                        <span class="skill-tag">Probability</span>
-                        <span class="skill-tag">Linear Algebra</span>
-                        <span class="skill-tag">Calculus</span>
-                        <span class="skill-tag">AI</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Image Preprocessing</span>
-                    </div>
-                </div>
-
+      <div class="container">
+        <h2 class="section-title"><span>04.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="glass-card skill-category">
+            <h3>Data Visualization</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Advanced Excel</span>
+              <span class="skill-tag">KPI Dashboards</span>
             </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3>Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Spring</span>
+              <span class="skill-tag">Deep Learning</span>
+              <span class="skill-tag">GenAI</span>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3>Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Database Management</span>
+              <span class="skill-tag">ERD</span>
+              <span class="skill-tag">Hadoop</span>
+              <span class="skill-tag">Big Data</span>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3>Data Science</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Statistics</span>
+              <span class="skill-tag">Probability</span>
+              <span class="skill-tag">Linear Algebra</span>
+              <span class="skill-tag">Calculus</span>
+              <span class="skill-tag">AI</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Image Preprocessing</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- 5. Projects Section -->
     <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>05.</span> Projects</h2>
-            <div class="projects-wrapper">
-                
-                <div class="glass-card project-card">
-                    <h3>Predictive Retention Model</h3>
-                    <p class="project-desc">Identified at-risk customers with 85% accuracy using machine learning algorithms on historical behavior data.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">Scikit-Learn</span>
-                        <span class="tech-item">Pandas</span>
-                    </div>
-                </div>
-
-                <div class="glass-card project-card">
-                    <h3>On-Demand Car Wash Platform</h3>
-                    <p class="project-desc">Full-stack web application handling real-time bookings, scheduling, and payment processing.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">React</span>
-                        <span class="tech-item">Spring Boot</span>
-                        <span class="tech-item">SQL</span>
-                    </div>
-                </div>
-
-                <div class="glass-card project-card">
-                    <h3>Leaf Disease AI</h3>
-                    <p class="project-desc">Deep Learning application using CNNs to detect plant pathologies from smartphone images in real-time.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">TensorFlow</span>
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">OpenCV</span>
-                    </div>
-                </div>
-
-                <div class="glass-card project-card">
-                    <h3>IoT Mine Safety</h3>
-                    <p class="project-desc">Sensor network system triggering automated alerts for hazardous gas levels in mining environments.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">IoT</span>
-                        <span class="tech-item">C++</span>
-                        <span class="tech-item">Analytics</span>
-                    </div>
-                </div>
-
+      <div class="container">
+        <h2 class="section-title"><span>05.</span> Projects</h2>
+        <div class="projects-wrapper">
+          <div class="glass-card project-card">
+            <h3>Predictive Retention Model</h3>
+            <p class="project-desc">
+              Identified at-risk customers with 85% accuracy using machine
+              learning algorithms on historical behavior data.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Scikit-Learn</span>
+              <span class="tech-item">Pandas</span>
             </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <h3>On-Demand Car Wash Platform</h3>
+            <p class="project-desc">
+              Full-stack web application handling real-time bookings,
+              scheduling, and payment processing.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">React</span>
+              <span class="tech-item">Spring Boot</span>
+              <span class="tech-item">SQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <h3>Leaf Disease AI</h3>
+            <p class="project-desc">
+              Deep Learning application using CNNs to detect plant pathologies
+              from smartphone images in real-time.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">TensorFlow</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">OpenCV</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <h3>IoT Mine Safety</h3>
+            <p class="project-desc">
+              Sensor network system triggering automated alerts for hazardous
+              gas levels in mining environments.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">IoT</span>
+              <span class="tech-item">C++</span>
+              <span class="tech-item">Analytics</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 6. Courses Section (NEW) -->
     <section id="courses" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>06.</span> Courses</h2>
-            <div class="projects-wrapper"> <!-- Reusing grid wrapper -->
-                
-                <div class="glass-card project-card">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-                        <img src="assets/images/microsoft_logo.png" alt="Microsoft" style="width: 48px; height: 48px; object-fit: contain;">
-                        <h3 style="margin-bottom: 0;">Microsoft Azure Data Fundamentals</h3>
-                    </div>
-                    <p class="project-desc">Gained foundational knowledge of core data concepts, relational and non-relational data, and cloud-based analytics using Microsoft Azure services.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">Azure</span>
-                        <span class="tech-item">Cloud Data</span>
-                        <span class="tech-item">Analytics</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title"><span>06.</span> Courses</h2>
+        <div class="projects-wrapper">
+          <!-- Reusing grid wrapper -->
 
-                <div class="glass-card project-card">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-                        <img src="assets/images/google_logo.png" alt="Google" style="width: 58px; height: 58px; object-fit: contain; transform: scale(1.8);">
-                        <h3 style="margin-bottom: 0;">Google Data Analytics Professional Certificate</h3>
-                    </div>
-                    <p class="project-desc">Comprehensive training in data cleaning, analysis, and visualization using SQL, R, and Tableau to drive data-driven decision making.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">SQL</span>
-                        <span class="tech-item">R</span>
-                        <span class="tech-item">Tableau</span>
-                    </div>
-                </div>
-
+          <div class="glass-card project-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 12px;
+              "
+            >
+              <img
+                src="assets/images/microsoft_logo.png"
+                alt="Microsoft"
+                style="width: 48px; height: 48px; object-fit: contain"
+              />
+              <h3 style="margin-bottom: 0">
+                Microsoft Azure Data Fundamentals
+              </h3>
             </div>
+            <p class="project-desc">
+              Gained foundational knowledge of core data concepts, relational
+              and non-relational data, and cloud-based analytics using Microsoft
+              Azure services.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Azure</span>
+              <span class="tech-item">Cloud Data</span>
+              <span class="tech-item">Analytics</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 12px;
+              "
+            >
+              <img
+                src="assets/images/google_logo.png"
+                alt="Google"
+                style="
+                  width: 58px;
+                  height: 58px;
+                  object-fit: contain;
+                  transform: scale(1.8);
+                "
+              />
+              <h3 style="margin-bottom: 0">
+                Google Data Analytics Professional Certificate
+              </h3>
+            </div>
+            <p class="project-desc">
+              Comprehensive training in data cleaning, analysis, and
+              visualization using SQL, R, and Tableau to drive data-driven
+              decision making.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">SQL</span>
+              <span class="tech-item">R</span>
+              <span class="tech-item">Tableau</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 7. Publication Section -->
     <section id="publication" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>07.</span> Publication</h2>
-            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 40px; text-align: center;">
-                <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 15px;">App Based Leaf Disease Detection</h3>
-                <h4 style="color: var(--secondary); font-weight: 500; margin-bottom: 20px;">Using Image Pre-Processing & Deep Learning</h4>
-                <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                    Published in <strong>ETMICS, Springer 2025</strong>. 
-                    <br>This research explores advanced computer vision techniques for agricultural diagnostics.
-                </p>
-                <div class="tech-stack" style="justify-content: center;">
-                    <span class="tech-item">Research</span>
-                    <span class="tech-item">Deep Learning</span>
-                    <span class="tech-item">Springer</span>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title"><span>07.</span> Publication</h2>
+        <div
+          class="glass-card"
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+          "
+        >
+          <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 15px">
+            App Based Leaf Disease Detection
+          </h3>
+          <h4
+            style="
+              color: var(--secondary);
+              font-weight: 500;
+              margin-bottom: 20px;
+            "
+          >
+            Using Image Pre-Processing & Deep Learning
+          </h4>
+          <p style="color: var(--text-secondary); margin-bottom: 20px">
+            Published in <strong>ETMICS, Springer 2025</strong>. <br />This
+            research explores advanced computer vision techniques for
+            agricultural diagnostics.
+          </p>
+
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-981-96-6406-1_18"
+            target="_blank"
+            class="btn-small btn-outline"
+            style="margin-bottom: 20px"
+            >View Publication</a
+          >
+          <div class="tech-stack" style="justify-content: center">
+            <span class="tech-item">Research</span>
+            <span class="tech-item">Deep Learning</span>
+            <span class="tech-item">Springer</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 7. Contact Section -->
     <section id="contact" class="section">
-        <div class="container contact-wrapper">
-            <h2 class="section-title"><span>08.</span> Contact</h2>
-            <div class="glass-card contact-box">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; vertical-align: middle;"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                    Connect with me
-                </h3>
-                <div class="contact-links">
-                    <a href="mailto:R.Bothe1@universityofgalway.ie" class="contact-item">
-                        <div class="contact-icon">
-                            <!-- Email Icon (Envelope) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </div>
-                        <span class="contact-value">R.Bothe1@universityofgalway.ie</span>
-                    </a>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <!-- Location Icon (Map Pin) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        </div>
-                        <span class="contact-value">Galway, Ireland</span>
-                    </div>
-                    <a href="https://www.linkedin.com/" target="_blank" class="contact-item">
-                        <div class="contact-icon">
-                            <!-- LinkedIn Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </div>
-                        <span class="contact-value">Connect on LinkedIn</span>
-                    </a>
-                </div>
+      <div class="container contact-wrapper">
+        <h2 class="section-title"><span>08.</span> Contact</h2>
+        <div class="glass-card contact-box">
+          <h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="margin-right: 10px; vertical-align: middle"
+            >
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            Connect with me
+          </h3>
+          <div class="contact-links">
+            <a
+              href="mailto:R.Bothe1@universityofgalway.ie"
+              class="contact-item"
+            >
+              <div class="contact-icon">
+                <!-- Email Icon (Envelope) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="contact-value">R.Bothe1@universityofgalway.ie</span>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <!-- Location Icon (Map Pin) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span class="contact-value">Galway, Ireland</span>
             </div>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="contact-item"
+            >
+              <div class="contact-icon">
+                <!-- LinkedIn Icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <span class="contact-value">Connect on LinkedIn</span>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer style="text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.9rem;">
-        <p>&copy; 2025 Rutuja Bothe. Built with Code & Data.</p>
+    <footer
+      style="
+        text-align: center;
+        padding: 40px 0;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      "
+    >
+      <p>&copy; 2025 Rutuja Bothe. Built with Code & Data.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
