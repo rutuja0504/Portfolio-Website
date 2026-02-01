@@ -124,36 +124,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Better Strategy: usage of a list of "actions" or "segments".
         
         const lines = [
-            { text: "// User Profile Configuration\n", class: "token-comment" },
-            { text: "const ", class: "token-keyword" },
+            { text: "# User Profile Configuration\n", class: "token-comment" },
             { text: "user", class: "token-variable" },
             { text: " = {\n", class: "token-plain" },
             
-            { text: "    name", class: "token-key" },
+            { text: "    \"name\"", class: "token-key" },
             { text: ": ", class: "token-operator" },
             { text: "\"Rutuja Bothe\"", class: "token-string" },
             { text: ",\n", class: "token-plain" },
 
-            { text: "    location", class: "token-key" },
+            { text: "    \"location\"", class: "token-key" },
             { text: ": ", class: "token-operator" },
             { text: "\"Galway, Ireland\"", class: "token-string" },
             { text: ",\n", class: "token-plain" },
 
-            { text: "    education", class: "token-key" },
+            { text: "    \"education\"", class: "token-key" },
             { text: ": ", class: "token-operator" },
             { text: "\"University of Galway\"", class: "token-string" },
             { text: ",\n", class: "token-plain" },
 
-            { text: "    skills", class: "token-key" },
+            { text: "    \"skills\"", class: "token-key" },
             { text: ": [\n", class: "token-operator" },
             { text: "        \"Python\", \"SQL\", \"Tableau\",\n", class: "token-string" },
-            { text: "        \"PowerBI\", \"React\", \"Spring Boot\"\n", class: "token-string" },
+            { text: "        \"PowerBI\", \"Hadoop\", \"ERP\"\n", class: "token-string" },
             { text: "    ],\n", class: "token-plain" },
 
-            { text: "    status", class: "token-key" },
+            { text: "    \"status\"", class: "token-key" },
             { text: ": ", class: "token-operator" },
             { text: "\"Open to Work\"", class: "token-string" },
-            { text: "\n};", class: "token-plain" }
+            { text: "\n}", class: "token-plain" }
         ];
 
         let lineIndex = 0;
